@@ -1,0 +1,41 @@
+Aligned strings can be of four types:  DNA, protein, text split on word, and text split on character.  All string types come with default gap open and gap extension values that can be adjusted by the user.
+<br>
+<br>
+
+DNA:
+<br>
+<p>  when the DNA option is chosen all non letter characters are removed from the inserted text.  Because of ambiguous nucleotides the content of the string is not checked to ensure that it is DNA.  White spaces and new lines are removed and the program checks for fasta headers.  Be sure to set the match and miss-match values to the desired values.  Unlike proteins, DNA and text do not use scoring matrices to score matches and miss-matches
+<br>
+<br>
+
+Protein:
+<br>
+<p>  when the protein option is chosen the string is checked to ensure that all the alphabet is made up of amino acids.  Like DNA, fasta headers and non string characters are searched for and removed.  Aligning proteins utilizes one of the two optional scoring matrices.  If you would like to align your protein sequences without using a scoring matrix just insert the string as DNA.
+<br>
+<br>
+
+Text, split on character: 
+<br>
+<p>  when this option is chosen, all white spaces are removed and the string is split by letter.  As with DNA you should adjust the match and miss-match parameters, along with gap open and gap extension values if desired
+<br>
+<br>
+
+Text, split on word: 
+<br>
+<p>  when one chooses this option the text is processed as before, but is split into words, not individual characters.
+<br>
+<br>
+<br>
+
+About text output:
+<br>
+<p>Text output will appear on one line when viewed in a browser.  To view the alignment just save the page as a text document then open with a text editor.
+<br>
+<br>
+
+Remember; 9 out of 10 kittens love Smith-Waterman alignments!
+<br>
+<br>
+please direct questions and comments to:
+<br>
+wtclarkatindianadotedu

@@ -1,0 +1,57 @@
+<html><head><title>Smith-Waterman Alignment</title></head>
+<body>
+<form action="../../cgi-bin/wtclark/smith_waterman/sw_wrapper.cgi" method="GET">
+<p align="center">
+<font size="6" face="Times New Roman">
+Smith-Waterman Sequence Alignment</font></p>
+
+
+<img src="cutekitten.jpg" width="360" height="414" hspace="0"  align="right" border="0" >
+<br>
+<p align="left"> 
+Insert the Strings you would like to align in the boxes below.  
+Strings can be DNA, protein, or just PLAIN TEXT!! <A HREF="about.html" TARGET="" >about...</A></p>
+
+Insert String 1 here:<br>
+<textarea rows=12 name="seq1" cols=65></textarea><br>
+<br>
+Insert String 2 here:<br>
+<textarea rows=12 name="seq2" cols=65></textarea><br>	
+<br>
+
+
+
+Select a Data Type<br>
+<SELECT NAME="data_type">
+    <OPTION> protein
+    <OPTION> DNA
+    <OPTION> Text split on word
+    <OPTION> text split on letter
+</SELECT>
+<br>
+
+<br>
+Select an Output Type<br>
+<SELECT NAME="output_type">
+    <OPTION> alignment (html table)
+    <OPTION> alignment (tabb delineated text)
+</SELECT>
+<br>
+<br>
+Select a matrix (proteins only)<br>
+<SELECT NAME="matrix">
+    <OPTION value="pam250_easy">PAM250</option>
+    <OPTION value="blosum62_easy">BLOSUM62</option>
+</SELECT>
+<br>
+<br>
+Gap Open Penalty:<input type="text" name="gap_open" size=3 value="-2"><br>
+Gap Extension Penalty:<input type="text" name="gap_ext" size=3 value="-1"><br>
+Match (non protein only):<input type="text" name="match" size=3 value="2"><br>
+Miss-Match (non protein only):<input type="text" name="missmatch" size=3 value="-1"><br>
+
+
+<input type="submit" value="submit">
+<input type="reset" value="Reset">
+</form>
+</body></html>
